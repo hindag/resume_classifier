@@ -1,0 +1,31 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+   <body>
+   	
+	<!-- <h1>thank you...</h1>-->
+ <div class="login">
+  <h1>Classification des cvs</h1>
+     <!-- Main Input For Receiving Query to our ML -->
+        <form method="POST" action="{{ url_for('upload_files')}}" enctype="multipart/form-data">
+      <p><input type="file" name="file"></p>
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predire</button>
+    </form>
+
+   <br>
+   <br>
+ </div>
+
+      
+    
+   </body>
+</html>
+
